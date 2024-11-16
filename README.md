@@ -7,5 +7,5 @@
 <h2>Characters to Classify:</h2>
 <img src="https://github.com/user-attachments/assets/df50acf3-6352-4bb1-b168-1801630cf309" height="200"/>
 <br>
-<a href="https://namu.wiki/w/%ED%8B%B0%EB%8B%88%ED%95%91#s-3.1.4">Click here to see details.</a>
+<a href="https://serious-mandolin-f36.notion.site/139465b4bc2880cc997bd9cceac56cf1?pvs=4">Click here to see details.</a>
 </div>

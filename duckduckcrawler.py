@@ -16,7 +16,7 @@ def download_image(url, folder, filename):
     except Exception as e:
         print(f"Error downloading {url}: {str(e)}")
 
-def search_and_download_images(query, num_images=250):
+def search_and_download_images(query, num_images):
     # Use relative path for the folder
     folder = os.path.join(os.path.dirname(__file__), query)
     with DDGS() as ddgs:
@@ -32,10 +32,23 @@ def search_and_download_images(query, num_images=250):
             download_image(image_url, folder, filename)
 
 def main():
-    queries = ["하츄핑", "포실핑", "샤샤핑", "젤리핑"]
+    """
+        duckduckgo 포털 사이트에서 이미지를 크롤링하는 코드이다.
+        queries, num_images 이 두 변수만 설정하고 코드를 실행하면 된다.
+
+        queries에는 검색어를 문자열로 넣으면 된다.
+        검색어 별로 num_images만큼의 이미지를 다운로드한다.
+    """
+
+    # 검색어 쿼리를 배열에 담는다.
+    queries = ["또너핑", "또너핑 이미지", "또너핑 배경화면", "donutping", "donutping image"]
+    
+    # 각 쿼리별 다운로드할 이미지의 개수
+    num_images = 50
+
     for query in queries:
         print(f"Searching and downloading images for: {query}")
-        search_and_download_images(query)
+        search_and_download_images(query, num_images)
         print(f"Finished downloading images for: {query}")
 
 if __name__ == "__main__":
